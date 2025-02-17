@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProductCard.css";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, addToCart }) {
   return (
     <div className="product-card">
       <img src={product.image} alt={product.title} className="product-image" />
@@ -13,7 +13,9 @@ export default function ProductCard({ product }) {
         <span>({product.rating.count} reviews)</span>
       </div>
       <p className="product-price">${product.price.toFixed(2)}</p>
-      <button className="add-to-cart-btn">Add to Cart</button>
+      <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
+        Add to Cart
+      </button>
     </div>
   );
 }
