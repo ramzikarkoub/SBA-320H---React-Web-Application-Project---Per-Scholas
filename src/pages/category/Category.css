@@ -1,19 +1,10 @@
 .product-list {
-  /* margin: 0 auto; */
-  /* display:flex: */
-  /* flex-wrap:wrap; */
-  /* justify-content:center;
-    align-items:center; */
+  margin: 0 auto; */
 }
+
 .category-header {
-  /* text-align:center;
-    font-size:24px;
-    font-weight:bold;
-    margin-bottom:20px; */
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* gap: 50px; */
-  width: 100%;
-  padding: 40px 40px 0 40px;
+  justify-content: space-between;
+   width: 100%;
 }

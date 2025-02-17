@@ -1,11 +1,9 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  ali
-  gap: 20px;
+  justify-content: start;
+  gap: 5px;
   padding: 20px;
   background-color: #242424;
-  align-items: stretch; 
-  width:1500px
+  align-items: stretch;
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Categories.css";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
-export default function Categories() {
+export default function Categories({ category }) {
   const [categories, setCategories] = useState([]);
   const selectedCategory = useParams().category;
   //   console.log(category);
@@ -24,22 +24,33 @@ export default function Categories() {
 
   return (
     <div className="categories">
-      <h2 className="categories-title">Categories:</h2>
-      <ul>
-        {categories.map((category, index) => (
-          <li key={index}>
-            <Link to={`/products/category/${category}`}>
-              <button
-                className={` ${
-                  category === selectedCategory ? "btn-category" : ""
-                }`}
-              >
-                {category}
+      <div className="category-header">
+        <h2 className="categories-title">
+          {category ? category : "All Products"}
+        </h2>
+        <ul>
+          <li>
+            <Link to={"/"}>
+              <button className={` ${!category ? "btn-category" : ""}`}>
+                All
               </button>
             </Link>
           </li>
-        ))}
-      </ul>
+          {categories.map((category, index) => (
+            <li key={index}>
+              <Link to={`/products/category/${category}`}>
+                <button
+                  className={` ${
+                    category === selectedCategory ? "btn-category" : ""
+                  }`}
+                >
+                  {category}
+                </button>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

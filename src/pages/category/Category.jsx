@@ -26,9 +26,7 @@ export default function Category() {
   return (
     <div className="product-list">
       <div className="category-header">
-        <h2>Products in {category}</h2>
-        {/* <Link to="/"> Go back to All Categories</Link> */}
-        <Categories />
+        <Categories category={category} />
       </div>
       <div className="category-products">
         <ProductsList FilteredProduct={categoryToDisplay} />
