@@ -1,14 +1,13 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import ProductsList from "../../components/productsList/ProductsList";
-// import Categories from "../../components/categories/Categories";
-import "./Category.css";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Categories from "../../components/categories/Categories";
+import ProductsList from "../../components/productsList/ProductsList";
+import axios from "axios";
 
 export default function Category() {
-  const { category } = useParams(); // Extracts the category from the URL
+  const { category } = useParams();
   const [categoryToDisplay, setCategoryToDisplay] = useState([]);
+
   useEffect(() => {
     const fetchCategory = async () => {
       try {
@@ -28,6 +27,7 @@ export default function Category() {
       <div className="category-header">
         <Categories category={category} />
       </div>
+
       <div className="category-products">
         <ProductsList FilteredProduct={categoryToDisplay} />
       </div>
