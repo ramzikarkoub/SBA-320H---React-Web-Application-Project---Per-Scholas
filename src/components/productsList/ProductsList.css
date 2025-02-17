@@ -7,3 +7,8 @@
   background-color: #242424;
   align-items: stretch;
 }
+.loading-text {
+  color: white;
+  font-size: 28px;
+  margin: 20px;
+}
