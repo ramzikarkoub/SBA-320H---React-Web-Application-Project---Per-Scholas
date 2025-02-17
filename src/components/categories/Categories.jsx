@@ -26,7 +26,12 @@ export default function Categories({ category }) {
     <div className="categories">
       <div className="category-header">
         <h2 className="categories-title">
-          {category ? category : "All Products"}
+          {category
+            ? category
+                .split(" ")
+                .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(" ")
+            : "All Products"}
         </h2>
         <ul>
           <li>

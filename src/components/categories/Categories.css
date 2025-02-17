@@ -62,3 +62,9 @@ button:hover {
 button:active {
   transform: scale(0.98);
 }
+
+@media (max-width: 600px) {
+  .category-header {
+    flex-direction: column;
+  }
+}

@@ -1,7 +1,7 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   gap: 5px;
   padding: 20px;
   background-color: #242424;
