@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Home from "../../pages/Home/Home";
-import Cart from "../../pages/cart/Cart";
 import "./nav.css";
+import { useContext } from "react";
+import { CartContext } from "../../assets/CartContext";
 
 export default function Nav() {
+  const { cart } = useContext(CartContext);
+  console.log(cart);
+
   return (
     <div>
       <nav>

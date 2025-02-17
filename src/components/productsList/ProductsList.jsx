@@ -4,14 +4,6 @@ import ProductCard from "../productCard/ProductCard";
 import "./ProductsList.css";
 
 export default function ProductsList({ FilteredProduct }) {
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (product) => {
-    const updatedCart = [...cart, product];
-    setCart(updatedCart);
-  };
-
-  console.log(cart);
   const [products, setProducts] = useState([]);
   useEffect(() => {
     const fetchProducts = async () => {
@@ -24,22 +16,10 @@ export default function ProductsList({ FilteredProduct }) {
     <div className="product-list">
       {FilteredProduct
         ? FilteredProduct.map((product, index) => (
-            <ProductCard
-              key={index}
-              product={product}
-              addToCart={addToCart}
-              cart={cart}
-              setCart={setCart}
-            />
+            <ProductCard key={index} product={product} />
           ))
         : products.map((product, index) => (
-            <ProductCard
-              key={index}
-              product={product}
-              addToCart={addToCart}
-              cart={cart}
-              setCart={setCart}
-            />
+            <ProductCard key={index} product={product} />
           ))}
     </div>
   );
