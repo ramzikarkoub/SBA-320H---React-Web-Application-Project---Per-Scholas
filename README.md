@@ -6,6 +6,8 @@ A simple e-commerce web application built with **React.js**, using **React Route
 
 ## 📌 Features
 
+- 🛠 **React useContext:** Manages global state for cart functionality.
+- 🛒 **Manage Cart:** Add and remove products dynamically using React useContext.
 - 🏪 **Browse Products:** View a list of products fetched from FakeStore API.
 - 🔍 **Category Filtering:** Products are organized by categories.
 - 🛒 **Shopping Cart:** Add and remove items from the cart.
@@ -17,7 +19,7 @@ A simple e-commerce web application built with **React.js**, using **React Route
 
 ## 🚀 Live Demo
 
-🔗 [**Demo Link (if hosted)**]
+🔗 [https://react-ecommerce-perscholas.netlify.app/]
 
 ---
 
@@ -90,6 +92,10 @@ _The application will run at `http://localhost:3000/`._
 - **FakeStore API**: [https://fakestoreapi.com](https://fakestoreapi.com)
 
 ---
+
+## 🔮 Future Improvements
+
+- 🏷 **Product Page:** A dedicated page for each product, displaying detailed information.
 
 ## 🤝 Contributing
 
