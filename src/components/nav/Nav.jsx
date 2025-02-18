@@ -7,7 +7,8 @@ import { CartContext } from "../../assets/CartContext";
 export default function Nav() {
   const { cart } = useContext(CartContext);
   console.log(cart);
-
+  const itemsInCart = cart.reduce((acc, item) => acc + item.quantity, 0);
+  console.log(itemsInCart);
   return (
     <div>
       <nav>
@@ -16,7 +17,7 @@ export default function Nav() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/cart">Cart ({cart.length})</Link>
+            <Link to="/cart">Cart ({itemsInCart})</Link>
           </li>
         </ul>
       </nav>
