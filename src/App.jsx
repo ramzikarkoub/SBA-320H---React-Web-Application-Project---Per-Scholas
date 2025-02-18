@@ -11,7 +11,6 @@ function App() {
     <CartProvider>
       <Nav />
       <Routes>
-        {/* <Home /> */}
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path={"/products/category/:category"} element={<Category />} />
