@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import "./Product.css";
+import "./product.css";
 import { CartContext } from "../../assets/CartContext";
 
 export default function Product() {
