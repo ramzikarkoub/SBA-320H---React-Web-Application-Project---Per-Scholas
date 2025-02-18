@@ -1,6 +1,6 @@
 import "./App.css";
 import Nav from "./components/nav/Nav";
-import Home from "./pages/Home/Home";
+import Home from "./pages/home/Home";
 import Cart from "./pages/cart/Cart";
 import { Routes, Route } from "react-router-dom";
 import Category from "./pages/category/Category";
@@ -11,6 +11,7 @@ function App() {
     <CartProvider>
       <Nav />
       <Routes>
+        {/* <Home /> */}
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path={"/products/category/:category"} element={<Category />} />

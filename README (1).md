@@ -105,6 +105,6 @@ This project is licensed under the **MIT License**.
 
 ## 📞 Contact
 
-For any inquiries or suggestions, reach out at [karkoub.ramzi@gmail.com].
+For any inquiries or suggestions, reach out at [your-email@example.com].
 
 🌟 **If you like this project, don't forget to give it a star ⭐ on GitHub!**
